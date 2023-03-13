@@ -59,10 +59,19 @@ pip install -r requirements.txt
 6- Database için,
 python manage.py migrate
 
-7- Admin Paneli için kullanıcı oluşturun
+7- .env file
+    SECRET_KEY=
+    DEBUG=True
+    SQL_DATABASE=docker_django
+    SQL_USER=
+    SQL_PASSWORD=
+    SQL_HOST=db
+    SQL_PORT=5432
+
+8- Admin Paneli için kullanıcı oluşturun
 python manage.py createsuperuser
 
-8- Proje hazır, şimdi kullanmaya başlayabilirsiniz
+9- Proje hazır, şimdi kullanmaya başlayabilirsiniz
 python manage.py runserver
 
 Uygulamayı geliştirme modunda çalıştırır. Tarayıcıda görüntülemek için http://127.0.0.1:8000/'i
@@ -86,10 +95,19 @@ pip install -r requirements.txt
 6- For database,
 python manage.py migrate
 
-7- Create user for Admin Panel
+7- .env file
+    SECRET_KEY=
+    DEBUG=True
+    SQL_DATABASE=docker_django
+    SQL_USER=
+    SQL_PASSWORD=
+    SQL_HOST=db
+    SQL_PORT=5432
+
+8- Create user for Admin Panel
 python manage.py createsuperuser
 
-8- The project is ready, you can start using it now
+9- The project is ready, you can start using it now
 python manage.py runserver
 
 Runs the application in development mode. To view in the browser http://127.0.0.1:8000/
