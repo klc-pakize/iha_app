@@ -1,0 +1,39 @@
+version: "3.9" # optional
+
+services:
+  frontend:
+    image: pakizekilic/docker-compose-fronted
+    build: ./frontend
+    ports:
+      - 3000:3000
+    restart: on-failure
+    depends_on:
+      - backend # first run backend.
+    # volumes:
+    # - ./frontend:/frontend
+
+  backend:
+    image: pakizekilic/docker-compose-backend # build, if no image
+    build: ./backend # Which folder (project folder) (must be dockerfile in the folder)
+    ports: # external:internal ports
+      - 8000:8000
+    restart: on-failure # when restart
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+    volumes: # external:internal volumes
+      - ./backend:/backend
+  db:
+    image: pakizekilic/postgres:13-alpine
+    volumes:
+      - pg_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=pakize
+      - POSTGRES_PASSWORD=Sadi1430
+      - POSTGRES_DB=docker_django
+volumes:
+  pg_data:
+# $ docker compose up # compose çalıştır.
+# $ docker compose up -d --build # compose daemon aç ve tekrar build et.
+# $ docker compose down # compose kapat.

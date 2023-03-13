@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.input {
+  position: absolute;
+  right: -2rem;
+  bottom: 10rem;
+  font-size: large;
+  color: darkblue;
+}
+.input2 {
+  position: relative;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.3rem;
+  background-color: darkblue;
+  color: white;
+  border-radius: 20rem;
+  font-size: large;
+}
+.reservationinput {
+  margin: 5rem;
+}
+
+.dateinput1 {
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  font-size: large;
+}
+
+.dateinput2 {
+  font-size: large;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+}
+
+.message {
+  color: white;
+  font-size: medium;
+}
