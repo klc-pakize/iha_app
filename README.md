@@ -11,7 +11,7 @@
 - Reservation
 - User
 
-![Model]()
+![Model](https://github.com/klc-pakize/iha_app/blob/master/IhaAppERD.png)
 
 # Customers
 
@@ -34,9 +34,10 @@
     - Can make CRUD operations on Reservations table,
 
 # Live Project
+![](https://github.com/klc-pakize/iha_app/blob/master/iha_app_login_register.gif)
+![](https://github.com/klc-pakize/iha_app/blob/master/iha_app_search.gif)
+![](https://github.com/klc-pakize/iha_app/blob/master/iha_app_date.gif)
 
-- <a href="">Live of the project</a>
-- <a href="">For the swagger of the project</a>
 
 # Kurulum Back-end
 
